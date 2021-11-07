@@ -1,0 +1,13 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://shared/player/player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scene/01/scene_01.gd" type="Script" id=2]
+[ext_resource path="res://shared/dialog/dialog.tscn" type="PackedScene" id=3]
+
+[node name="scene" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 574.458, 326.389 )
+
+[node name="dialog" parent="." instance=ExtResource( 3 )]
