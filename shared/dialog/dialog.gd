@@ -9,6 +9,8 @@ func _ready():
 	$NinePatchRect.visible = false
 
 func play():
+	var player = get_tree().get_root().find_node('player', true, false)
+	player._set_active(false)
 	$NinePatchRect.visible = true
 	dialogues = load_dialogue()
 	
@@ -23,6 +25,8 @@ func next_line():
 	current_dialogue_id += 1
 	
 	if current_dialogue_id >= len(dialogues):
+		var player = get_tree().get_root().find_node('player', true, false)
+		player._set_active(true)
 		$NinePatchRect.visible = false
 		current_dialogue_id = 0
 		return

@@ -19,6 +19,10 @@ config/icon="res://icon.png"
 window/size/width=1152
 window/size/height=648
 
+[editor]
+
+script_templates_search_path="res://"
+
 [input]
 
 ui_run={
