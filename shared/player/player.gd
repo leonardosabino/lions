@@ -9,7 +9,7 @@ func _physics_process(_delta):
 pass
 
 func _move_player():
-	if (!get_tree().paused && active):
+	if (active):
 		var x = 0
 		var y = 0
 		
