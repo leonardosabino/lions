@@ -1,0 +1,66 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://menu/data/photos/naty.jpg" type="Texture" id=1]
+[ext_resource path="res://menu/data/photos/joao.jpg" type="Texture" id=2]
+[ext_resource path="res://menu/data/photos/leo.jpg" type="Texture" id=3]
+[ext_resource path="res://menu/data/photos/joao-hover.jpg" type="Texture" id=4]
+[ext_resource path="res://menu/data/photos/naty-hover.jpg" type="Texture" id=5]
+[ext_resource path="res://menu/data/photos/leo-hover.jpg" type="Texture" id=6]
+[ext_resource path="res://menu/selectPlayer/leo.gd" type="Script" id=7]
+[ext_resource path="res://menu/selectPlayer/joao.gd" type="Script" id=8]
+[ext_resource path="res://menu/selectPlayer/natalia.gd" type="Script" id=9]
+
+[node name="select_player" type="Node2D"]
+
+[node name="natalia" type="TextureButton" parent="."]
+margin_left = 789.005
+margin_top = 118.045
+margin_right = 1155.0
+margin_bottom = 650.045
+texture_normal = ExtResource( 1 )
+texture_hover = ExtResource( 5 )
+expand = true
+script = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="leo" type="TextureButton" parent="."]
+anchor_left = -0.664
+anchor_top = -3.12
+anchor_right = -0.664
+anchor_bottom = -1.56
+margin_left = -1.0
+margin_top = 117.0
+margin_right = 415.0
+margin_bottom = 649.0
+texture_normal = ExtResource( 3 )
+texture_hover = ExtResource( 6 )
+expand = true
+script = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="joao" type="TextureButton" parent="."]
+margin_left = 414.665
+margin_top = 118.045
+margin_right = 786.665
+margin_bottom = 648.045
+texture_normal = ExtResource( 2 )
+texture_hover = ExtResource( 4 )
+expand = true
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_left = 515.248
+margin_top = 54.7284
+margin_right = 652.248
+margin_bottom = 68.7284
+text = "ESCOLHA SEU PLAYER"
+__meta__ = {
+"_edit_use_anchors_": false
+}
