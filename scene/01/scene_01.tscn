@@ -1,9 +1,65 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=8 format=2]
 
+[ext_resource path="res://shared/player/leo/data/leo.png" type="Texture" id=1]
 [ext_resource path="res://scene/01/scene_01.gd" type="Script" id=2]
-[ext_resource path="res://shared/dialog/dialog.tscn" type="PackedScene" id=3]
+
+[sub_resource type="SegmentShape2D" id=1]
+a = Vector2( 1521.97, 8.15051 )
+
+[sub_resource type="SegmentShape2D" id=2]
+a = Vector2( -762.264, -617.986 )
+b = Vector2( -771.688, 831.117 )
+
+[sub_resource type="AtlasTexture" id=3]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 192, 1296, 64, 48 )
+
+[sub_resource type="SpriteFrames" id=4]
+animations = [ {
+"frames": [ SubResource( 3 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 140.909, 111.244 )
 
 [node name="scene" type="Node2D"]
 script = ExtResource( 2 )
 
-[node name="dialog" parent="." instance=ExtResource( 3 )]
+[node name="CollisionTop" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CollisionTop"]
+position = Vector2( -764.951, -623.14 )
+shape = SubResource( 1 )
+
+[node name="CollisionLeft" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CollisionLeft"]
+shape = SubResource( 2 )
+
+[node name="CollisionBot" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CollisionBot"]
+position = Vector2( -777.462, 816.715 )
+shape = SubResource( 1 )
+
+[node name="CollisionRight" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CollisionRight"]
+position = Vector2( 1514.63, -4.59741 )
+shape = SubResource( 2 )
+
+[node name="KinematicBody2D" type="KinematicBody2D" parent="."]
+position = Vector2( -2.11884, -510.661 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="KinematicBody2D"]
+position = Vector2( -1.0596, 2.11884 )
+scale = Vector2( 2.48987, 2.50091 )
+frames = SubResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D"]
+position = Vector2( 3.71112, 31.6781 )
+shape = SubResource( 5 )

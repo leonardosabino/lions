@@ -1,0 +1,123 @@
+{
+	"events": [
+		{
+			"character": "character-1650329179.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Você finalmenta vai entrar em cena, espero que esteja pronto. "
+		},
+		{
+			"choice": "Quem diabos é você e onde estamos?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1650329179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Acho que preciso te explicar algumas coisas antes de começarmos."
+		},
+		{
+			"choice": "Opa, claro. Podemos começar agora!",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1650329179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Perfeito, então iremos começar com algumas instruções."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1650329179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Primeiro, você teve azar. Infelizmente pra você a pessoa que você é já foi modelada antes, você sabe como é."
+		},
+		{
+			"character": "character-1650329179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Tudo aquilo que molda nossa personalidade e limita nossa consciência já foi definido, e não será diferente nesta sua personagem."
+		},
+		{
+			"character": "character-1650329179.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "A única coisa que você precisa fazer é viver com a vida que lhe foi dada, e aceitar as limitações que pra ela foram impostas."
+		},
+		{
+			"choice": "De que tipo de limitações estamos falando?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"choice": "Ainda estou perdido aqui.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1650329179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Espero que nem todo mundo desperdice meu tempo igual você."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1650329179.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Você sabe do que eu estou falando. Você é essencialmente um reflexo do seu passado e neste jogo você já começou com muito azar."
+		},
+		{
+			"choice": "Por que preciso começar com azar?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"choice": "Ainda não entendi nada do que está acontecendo aqui.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1650329179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Chega de comentários fúteis. Volte pelo abismo de onde você veio."
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.1",
+		"file": "timeline-1650329237.json",
+		"name": "Scene01-first"
+	}
+}

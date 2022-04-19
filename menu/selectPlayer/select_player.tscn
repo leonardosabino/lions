@@ -21,9 +21,6 @@ texture_normal = ExtResource( 1 )
 texture_hover = ExtResource( 5 )
 expand = true
 script = ExtResource( 9 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="leo" type="TextureButton" parent="."]
 anchor_left = -0.664
@@ -38,9 +35,6 @@ texture_normal = ExtResource( 3 )
 texture_hover = ExtResource( 6 )
 expand = true
 script = ExtResource( 7 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="joao" type="TextureButton" parent="."]
 margin_left = 414.665
